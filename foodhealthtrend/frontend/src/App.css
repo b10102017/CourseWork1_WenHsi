@@ -1,0 +1,91 @@
+body{
+background-color:#9ec4e4e0;   /* 淺灰背景 */
+margin:0;
+
+/* 讓整個畫面置中 */
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.App{
+  font-family:Arial, sans-serif;
+
+  background:white;
+  padding:30px;
+
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+
+  width:1000px;     /* 變寬 */
+  max-width:95%;
+
+  overflow-x:auto;  /* ⭐ 讓表格可以滑動 */
+}
+
+/* 標題 */
+h2{
+color:#2c3e50;              /* 深灰藍 */
+}
+
+h3{
+color:#34495e;
+margin-top:30px;
+}
+
+/* input */
+input{
+padding:8px;
+margin:5px;
+border:1px solid #d0d7de;
+border-radius:5px;
+}
+
+/* button */
+button{
+padding:8px 14px;
+margin:5px;
+background-color:#5dade2;   /* 淺藍色 */
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background-color:#3498db;   /* 深一點的藍 */
+}
+
+/* table */
+table{
+margin-top:20px;
+border-collapse:collapse;
+width:100%;
+background:white;
+}
+
+/* table header */
+th{
+background:#d6eaf8;         /* 淺藍色 */
+color:#2c3e50;
+}
+
+/* table cell */
+td,th{
+border:1px solid #dcdcdc;
+padding:10px;
+text-align:left;
+}
+
+/* zebra stripe */
+tr:nth-child(even){
+background:#f2f6fb;         /* 淺藍灰 */
+}
+
+/* 讓新增用的表格不要太寬 */
+table.add-food-table input {
+  width: 50px;   /* 每個 input 的寬度 */
+  padding: 4px;
+  font-size: 12px;
+}
