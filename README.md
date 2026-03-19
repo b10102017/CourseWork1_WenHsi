@@ -13,3 +13,6 @@
 ```python sqlite.py```
 3. Activate server. <br>
 ```python app.py```
+## API Documentation
+- API Documentation is in the form of Postman.json
+- You can import in Postman app.
