@@ -7,7 +7,9 @@
 3. Activate frontend. <br>
 ```npm start```
 ## Backend
-1. Run sqlite.py to load dataset into database. <br>
+1. Get into "server" directory. <br>
+``` cd foodhealthtrend/server ```
+2. Run sqlite.py to load dataset into database. <br>
 ```python sqlite.py```
-2. Activate server. <br>
+3. Activate server. <br>
 ```python app.py```
