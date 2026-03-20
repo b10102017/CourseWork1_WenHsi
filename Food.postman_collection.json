@@ -1,0 +1,391 @@
+{
+  "info": {
+    "_postman_id": "9b0adcd5-b12f-42de-b94d-845d3a4d4faf",
+    "name": "Food",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "31998273"
+  },
+  "item": [
+    {
+      "name": "searchFood",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "",
+            "value": "",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "key": "",
+              "value": "",
+              "type": "text",
+              "uuid": "7d2c69a3-b488-46eb-a5ee-2ff7e469b913",
+              "disabled": true
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/food/Abiyuch, raw",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "food",
+            "Abiyuch, raw"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "http://127.0.0.1:5000/food/999",
+          "originalRequest": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "",
+                "value": "",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "",
+                  "value": "",
+                  "type": "text",
+                  "uuid": "7d2c69a3-b488-46eb-a5ee-2ff7e469b913",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/food/Raw cat eyes with Pringles",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "food",
+                "Raw cat eyes with Pringles"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Server",
+              "value": "Werkzeug/3.1.3 Python/3.11.5"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 19 Mar 2026 18:54:48 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "608"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"brand_name\": null,\n        \"brand_owner\": null,\n        \"calcium_mg\": null,\n        \"calories\": 500,\n        \"carbs_g\": 21,\n        \"cholesterol_mg\": null,\n        \"data_type\": null,\n        \"fat_g\": 30,\n        \"fdc_id\": 1,\n        \"fiber_g\": 0,\n        \"food_category\": null,\n        \"food_name\": \"Raw cat eyes with Pringles\",\n        \"food_type\": \"French\",\n        \"health_score\": 9,\n        \"household_serving\": null,\n        \"ingredients\": null,\n        \"iron_mg\": null,\n        \"protein_g\": 50,\n        \"saturated_fat_g\": null,\n        \"serving_size\": null,\n        \"serving_unit\": null,\n        \"sodium_mg\": 9,\n        \"sugar_g\": 5,\n        \"vitamin_c_mg\": null\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "addFood",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"food_name\": \"haha\",\n    \"food_type\": \"friend\",\n    \"calories\": \"0\",\n    \"protein_g\": \"12\",\n    \"fat_g\": \"22\",\n    \"carbs_g\": \"3\",\n    \"fiber_g\": \"4\",\n    \"sugar_g\": \"5\",\n    \"sodium_mg\": \"6\",\n    \"health_score\": \"10\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/food",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "food"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "http://127.0.0.1:5000/food",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"food_name\": \"Deep fried lamb knee\",\n    \"food_type\": \"French\",\n    \"calories\": \"500\",\n    \"protein_g\": \"50\",\n    \"fat_g\": \"30\",\n    \"carbs_g\": \"21\",\n    \"fiber_g\": \"0\",\n    \"sugar_g\": \"5\",\n    \"sodium_mg\": \"9\",\n    \"health_score\": \"9\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/food",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "food"
+              ]
+            }
+          },
+          "status": "CREATED",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Server",
+              "value": "Werkzeug/3.1.3 Python/3.11.5"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 19 Mar 2026 18:53:03 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "546"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"brand_name\": null,\n    \"brand_owner\": null,\n    \"calcium_mg\": null,\n    \"calories\": 500,\n    \"carbs_g\": 21,\n    \"cholesterol_mg\": null,\n    \"data_type\": null,\n    \"fat_g\": 30,\n    \"fdc_id\": 1,\n    \"fiber_g\": 0,\n    \"food_category\": null,\n    \"food_name\": \"Deep fried lamb knee\",\n    \"food_type\": \"French\",\n    \"health_score\": 9,\n    \"household_serving\": null,\n    \"ingredients\": null,\n    \"iron_mg\": null,\n    \"protein_g\": 50,\n    \"saturated_fat_g\": null,\n    \"serving_size\": null,\n    \"serving_unit\": null,\n    \"sodium_mg\": 9,\n    \"sugar_g\": 5,\n    \"vitamin_c_mg\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "updateFood",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"food_name\": \"Raw cat eyes with Pringles\",\n    \"food_type\": \"French\",\n    \"calories\": \"500\",\n    \"protein_g\": \"50\",\n    \"fat_g\": \"30\",\n    \"carbs_g\": \"21\",\n    \"fiber_g\": \"0\",\n    \"sugar_g\": \"5\",\n    \"sodium_mg\": \"9\",\n    \"health_score\": \"9\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:5000/food/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "food",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "updateFood",
+          "originalRequest": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"food_name\": \"Raw cat eyes with Pringles\",\n    \"food_type\": \"French\",\n    \"calories\": \"500\",\n    \"protein_g\": \"50\",\n    \"fat_g\": \"30\",\n    \"carbs_g\": \"21\",\n    \"fiber_g\": \"0\",\n    \"sugar_g\": \"5\",\n    \"sodium_mg\": \"9\",\n    \"health_score\": \"9\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://127.0.0.1:5000/food/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "food",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Server",
+              "value": "Werkzeug/3.1.3 Python/3.11.5"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 19 Mar 2026 18:54:30 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "44"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"更新成功\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "deleteFood",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/food/1",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "5000",
+          "path": [
+            "food",
+            "1"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "deleteFood",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://127.0.0.1:5000/food/1",
+              "protocol": "http",
+              "host": [
+                "127",
+                "0",
+                "0",
+                "1"
+              ],
+              "port": "5000",
+              "path": [
+                "food",
+                "1"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Server",
+              "value": "Werkzeug/3.1.3 Python/3.11.5"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 19 Mar 2026 19:00:00 GMT"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Content-Length",
+              "value": "33"
+            },
+            {
+              "key": "Access-Control-Allow-Origin",
+              "value": "*"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"Food deleted!\"\n}"
+        }
+      ]
+    }
+  ]
+}
